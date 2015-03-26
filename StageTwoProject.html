@@ -1,0 +1,300 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Joshua Johnson's Intro to Programming Nanodegree Notes</title>
+	<link rel="stylesheet" href="style.css">
+	<meta charset="utf-8"/>
+</head>
+<body>
+	<h1 class="title">Intro to Programming Nanodegree</h1>
+	<div class="stage">
+		<h2 id="stage-1">Stage 1: Webpages, Documents, and Structure</h2>
+		<div class="lesson">
+			<h3 class="firstlesson" id="lesson-1">The Basics of the Web and HTML</h3>
+			<div class="concept" id="lesson-1-1">
+				<h4 class="concept-title">
+					<a href="http://en.wikipedia.org/wiki/World_Wide_Web">World Wide Web</a>
+				</h4>
+				<div class="concept-description">
+					The web is the way computers interact with the internet via HTTP, or hypertext transfer protocol. The webpages we see are transmitted via this protocol and are written in HTML, hypertext markup language.
+				</div>
+			</div>
+			<div class="concept" id="lesson-1-2">
+				<h4 class="concept-title">
+					<a href="http://en.wikipedia.org/wiki/HTML">HTML</a>
+				</h4>
+				<div class="concept-description">
+					HTML documents are written using markup language, or tags, to alter plain text and present the multimedia experiences that we know as webpages. Different tags have different behaviors. Some must be accompanied by a closing tag, while others are void tags. Some tags are block tags and segregate content into invisible boxes, while others are inline and simply affect the text without blocking it off.
+				</div>
+			</div>
+			<div class="concept" id="lesson-1-3">
+				<h4 class="concept-title">Stupid Computers</h4>
+				<div class="concept-description">
+					We say that computers are stupid because they cannot detect and fix mistakes that a reasonably intelligent human would be able to. They can only interpret instructions literally and cannot guess context.
+				</div>
+			</div>
+			<div class="concept" id="lesson-1-4">
+				<h4 class="concept-title">The Importance of Remembering Everything</h4>
+				<div class="concept-description">
+					Programming has too many rules and details to remember everything. Programmers should focus on learning big, important details and rely on their ability to search for and find the rest. If you are stressed over remembering every little detail of code which will invariably change in the future, please click <a href="https://www.youtube.com/watch?v=i6OwxEd0Th0">here</a> to destress, then resume your studies.
+				</div>
+			</div>
+		</div>
+		<div class="lesson">
+			<h3 id="lesson-2">Creating a Structured Document with HTML</h3>
+			<div class="concept" id="lesson-2-1">
+				<h4 class="concept-title">What a Front-End Web Developer Does</h4>
+				<div class="concept-description">
+					The job of a front-end web developer is to translate the visual design of a website into an actual, functional site. The tools they use for these sites are HTML, CSS (Cascading Style Sheets), and JavaScript, which we'll discuss later.
+				</div>
+			</div>
+			<div class="concept" id="lesson-2-2">
+				<h4 class="concept-title">HTML &amp; CSS</h4>
+				<div class="concept-description">
+					HTML files provide the structure of the site. HTML is the language of the web, with syntax and rules, composed primarily of tags that instruct the browser how to display the content. CSS files determine the style of the site. Webpages with identical HTML may look radically different depending on their CSS file. CSS may instruct the browser how to display fonts and colors, as well as shapes and sizes of objects.
+				</div>
+			</div>
+			<div class="concept" id="lesson-2-3">
+				<h4 class="concept-title">
+					<a href="http://en.wikipedia.org/wiki/Document_Object_Model">The DOM Tree</a>
+				</h4>
+				<div class="concept-description">
+					The browser renders HTML documents into a tree-like structure called the DOM, or Document Object Model, tree, that we can see in the developer tools of a browser. Using this tree, we can peruse through each element in a logically-organized manner.
+				</div>
+			</div>
+			<div class="concept" id="lesson-2-4">
+				<h4 class="concept-title">Boxifying (A Real Word)</h4>
+				<div class="concept-description">
+					Despite appearances, all objects on a webpage are contained in rectangular boxes which may or may not be visible on the page. A designer presents the front-end web developer with a design for the website, who then breaks down the page into basic component boxes from big to small. These boxes are then defined with div tags, which are accompanied by class names to instruct the CSS file how to treat each box. You can see what a box looks like by clicking <a href="https://www.google.com/search?q=box&amp;bm=isch">here</a>.
+				</div>
+			</div>
+		</div>
+		<div class="lesson">
+			<h3 id="lesson-3">Creating a Structured Document with HTML</h3>
+			<div class="concept" id="lesson-3-1">
+				<h4 class="concept-title">How to Use CSS</h4>
+				<div class="concept-description">
+					With no CSS, browser uses its default style to display elements, resulting in a very basic look. CSS can either be placed in the head of the HTML file or placed in a separate file. This may help you stay organized on larger projects. Another method which has the high potential for unnecessary repetition and makes HTML sites more difficult to maintain or update is the inline use of the <span class="code">&lt;style&gt;</span> tag for each element.
+				</div>
+			</div>
+			<div class="concept" id="lesson-3-2">
+				<h4 class="concept-title">Composition of the Box</h4>
+				<div class="concept-description">
+					The boxes that make up webpages are composed of the margin, border, padding, and content. Content is the image or text, a sort of nucleus surrounded by other sections. Padding clears an area around the content within the border. The padding is affected by background color of box. The border goes around padding and content. The border is inherited from the color property of the box. The margin, or space between boxes, clears an area around the border. It is completely transparent and colorless.
+				</div>
+			</div>
+			<div class="concept" id="lesson-3-3">
+				<h4 class="concept-title">Box Sizing</h4>
+				<div class="concept-description">
+					The element size is equal to the sum of the content, padding, and border widths. In order to maintain uniform box size without recalculating each time you change one of those values, use the <span class="code">box-sizing: border-box;</span> CSS style. The size of the box can be set in pixels or percentage. Setting a box size as a percentage will cause the box to resize based on display size or size of browser window. Setting a box size in pixels will cause box to always display in exactly the same size, which may lead to less than desirable results on small displays or when the browser window is resized smaller. You can also set a max width for the box. In that case, box will resize and become smaller than necessary but never larger than the max width.
+				</div>
+			</div>
+			<div class="concept" id="lesson-3-4">
+				<h4 class="concept-title">Box Positioning</h4>
+				<div class="concept-description">
+					Positioning boxes on the page is one of the most complicated parts of working with CSS. Divs are block elements (as opposed to inline), so by default they take up the entire width of a page. Adding the rule <span class="code">display: flex;</span> to the appropriate CSS will override this behavior and let divs appear next to each other.
+				</div>
+			</div>
+			<div class="concept" id="lesson-3-5">
+				<h4 class="concept-title">Avoiding Repetition: How to Not Repeat Yourself or Do the Same Thing Over and Over. This Should Be Avoided and Also You Shouldn't Do It.</h4>
+				<div class="concept-description">
+					It cannot be stressed enough how important it is to avoid repetition in your code. This not only makes it so that you don't have to repeat yourself over and over, but also helps you to avoid errors that might come from having to change so many individual elements. This allows you to set CSS selectors such as <span class="code">class</span> and <span class="code">ID</span> and change all elements with those selectors using one CSS command.
+				</div>
+			</div>
+			<div class="concept" id="lesson-3-6">
+				<h4 class="concept-title">Recap and Recipe for Successful Web Developing</h4>
+				<div class="concept-description">
+					<ol>
+						<li>Look for natural boxes in a design layout.</li>
+						<li>Look for repeated styles and semantic elements.</li>
+						<li>Write your HTML using appropriate tags and selectors.</li>
+						<li>Apply styles (from BIGGEST to smallest).</li>
+						<li>Fix things.
+							<ul>
+								<li>Resize the browser.</li>
+								<li>Try out your code in different browsers.</li>
+							</ul>
+						</li>
+					</ol>
+				</div>
+			</div>
+		</div>
+	</div>
+	<div class="stage">
+		<h2 id="stage-2">Stage 2: Telling Computers What to Do</h2>
+		<div class="lesson">
+			<h3 class="firstlesson" id="lesson-4">Introduction to "Serious" Programming</h3>
+			<div class="concept" id="lesson-4-1">
+				<h4 class="concept-title">What is Computer Science?</h4>
+				<div class="concept-description">
+					Computer Science is how to solve problems like building a search engine by breaking them into smaller pieces and then precisely and mechanically describing a sequence of steps to solve each piece, which can then be executed by a computer. For example, a search engine is built by building three main pieces: finding data by crawling webpages, building an index to respond quickly to queries, and ranking pages to give the best result for a given query.
+				</div>
+			</div>
+			<div class="concept" id="lesson-4-2">
+				<h4 class="concept-title">Programming</h4>
+				<div class="concept-description">
+					A computer is a universal machine which can be programmed to do essentially any computation. Computers need programs, however, to carry out these computations. Without a program, however, the computer can do nothing. A program is simply instructions telling the computer what to do. The program needs to be a very precise sequence of steps since computers can only do what they're told (for now). The computer can execute these steps very quickly.
+				</div>
+			</div>
+			<div class="concept" id="lesson-4-3">
+				<h4 class="concept-title">Python</h4>
+				<div class="concept-description">
+					Python is an interpreter that runs our programs, interprets them, executes the program we wrote in the Python program by translating them into instructions the computer understands. There are two parts to the Python interpreter: the environment where you input your code and the output panel where the result of your code is displayed.
+				</div>
+			</div>
+			<div class="concept" id="lesson-4-4">
+				<h4 class="concept-title">Why Programming Languages?</h4>
+				<div class="concept-description">
+					We use computer programming languages such as Python to avoid the ambiguities present in our natural languages such as English or Mandarin.  An example of such an ambiguity is the word biweekly, which can mean once every two weeks or twice a week. Furthermore, natural language is too verbose to write efficient code.
+				</div>
+			</div>
+			<div class="concept" id="lesson-4-5">
+				<h4 class="concept-title">Decimals and Integers in Python</h4>
+				<div class="concept-description">
+					When the input values for a mathematic equation are integers (i.e., they do not contain a decimal), python will shave any decimal value off of the result. For example, the expression 5 / 2 will yield a result of 2 instead of 2.5 and 1 / 10 will yield a result of 0 instead of 0.1. Adding a decimal to one of the values will force Python to give an answer that includes a decimal and the precise answer.
+				</div>
+			</div>
+		</div>
+		<div class="lesson">
+			<h3 id="lesson-5">Variables and Strings</h3>
+			<div class="concept" id="lesson-5-1">
+				<h4 class="concept-title">Variables</h4>
+				<div class="concept-description">
+					In order to reduce confusion over what each value represents, it is useful to assign variables for values in calculations. We use an assignment statement to assign these variables, which begin with either a letter or an underscore. An example assignment statement is <span class="code">speed_of_light = 299792458</span> which represents the speed of light in meters per second. After assigning the variable, can use this variable in future equations rather than remembering the exact number. If, for example, we wish to calculate the speed of light in centimeters, we would type <span class="code">print speed_of_light * 100</span> into Python since our speed of light is the distance light travels in one second in meters and there are 100 centimeters in a meter. 
+				</div>
+			</div>
+			<div class="concept" id="lesson-5-2">
+				<h4 class="concept-title">Variables Can Vary</h4>
+				<div class="concept-description">
+					It is important to note that because variables can be superseded by other identically-named variables that follow later in the code. Therefore, it is also important to remember that the symbol <span class="code">=</span> does not mean equals in computer programming as it does in mathematics. It simply means assignment, which is to say that whatever value follows the symbol <span class="code">=</span> is assigned to the variable that precedes the symbol.
+				</div>
+			</div>
+			<div class="concept" id="lesson-5-3">
+				<h4 class="concept-title">Strings</h4>
+				<div class="concept-description">
+					A string is a sequence of characters surrounded by either single or double quotes. It is imperative that if we begin a string with a single quote, we must also end it with a single quote and the same is true of double quotes. If using single quotes to define the string, then double quotes may be used inside the string and vice versa. For example, <span class="code">'Hello'</span>, <span class="code">'He"llo'</span> and <span class="code">"Hello"</span> are all valid strings, while <span class="code">'Hello"</span>, <span class="code">"Hello'</span>, and <span class="code">'He'llo'</span> are not. Strings and numbers cannot be combined. The command <span class="code">print 'Hello' + 1</span> would result in an error. However, strings can be combined using the <span class="code">+</span> symbol which concatenates strings together. For example, the command <span class="code">print 'Hello' + 'Josh'</span> would concatenate the two strings, producing the result <span class="code">HelloJosh</span>. Note that Python does not automatically add a space when concatenating two strings.
+				</div>
+			</div>
+			<div class="concept" id="lesson-5-4">
+				<h4 class="concept-title">Indexing Strings</h4>
+				<div class="concept-description">
+					We can extract subsequences from strings. We cannot do this with numbers.  Characters in a string are numbered beginning with <span class="code">0</span>. For example, in the string <span class="code">'Josh'</span>, the number <span class="code">0</span> would correspond with <span class="code">J</span>, <span class="code">1</span> would correspond with <span class="code">o</span>, et cetera. To extract part of the string, you would use square brackets <span class="code">[ ]</span> to surround an expression that evaluates to a number representing a character in the string. In the example of <span class="code">print 'Josh'[2]</span>, the result would be <span class="code">s</span> because that is the character in position 2 of the string. However, <span class="code">print 'Josh'[4]</span> would result in an error because there is no character in position 4 of the string.
+				</div>
+			</div>
+			<div class="concept" id="lesson-5-5">
+				<h4 class="concept-title">Selecting Subsequences Greater than One Digit Long</h4>
+				<div class="concept-description">
+					In order to extract a subsequence greater than one digit, we use a colon surrounded with numbers or expressions that resolve to numbers on either side of the colon enclosed in square brackets that represent the starting point and ending limit of the subsequence. The result will include the positions from the number on the left side of the colon up to, but not including, the number on the right side of the colon. If either side of the colon is left blank, the result will include all characters from the beginning or until the end of the string. For example, the expression <span class="code">print Josh'[1:]</span> will yield the result <span class="code">osh</span>.
+				</div>
+			</div>
+			<div class="concept" id="lesson-5-6">
+				<h4 class="concept-title">Finding Strings in Strings</h4>
+				<div class="concept-description">
+					Find is a function built into Python which allows us to search for strings inside of larger strings. The format for using the find function is <span class="code">print 'string'.find('string')</span> and the result will be the number where the string being sought begins in the original string. For example, <span class="code">print 'Josh'.find('o')</span> will yield a result of <span class="code">1</span> since the <span class="code">o</span> first occurs in position 2 of the string <span class="code">'Josh'</span>. If the search string does not occur in the original string, then the result will be <span class="code">-1</span>, as will occur with the command <span class="code">print 'Josh'.find('a')</span>. We can also use additional parameters in the find function by separating the string being searched for with a comma and a number indicating the position to begin the search from after the comma. For example, the command <span class="code">first_string.find('string',5)</span> will search for the string 'string' starting from position 5 in the string <span class="code">first_string</span>.
+				</div>
+			</div>
+		</div>
+		<div class="lesson">
+			<h3 id="lesson-6">Input -&gt; Function -&gt; Output</h3>
+			<div class="concept" id="lesson-6-1">
+				<h4 class="concept-title">What is a Function?</h4>
+				<div class="concept-description">
+					Functions are a way of taking inputs to produce outputs in coding. This is a powerful tool that avoids the necessity of producing code for each individual desired result. For example, if we want to calculate squares of numbers without typing in <span class="code">print x * x</span>, <span class="code">print y * y</span>, <span class="code">print z *z</span>, etc. each time, we can simply define a function that will allow us to achieve the desired result like<div class="codebox">def square(n):<br>&nbsp;&nbsp;&nbsp;&nbsp;return n * n<br><br>print square(5)</div>for which the result would be 25. To produce any further squares, we would only need to replace 5 with any number of our choosing. Functions can also be used to concatenate strings. For example, the function <div class="codebox">def abbaoncrack(a, b):<br>&nbsp;&nbsp;&nbsp;&nbsp;return a + b + b + a + a + b + b + a + a + b + b + a<br><br>print abbaoncrack('Mamma', 'Mia')</div>would produce the result MammaMiaMiaMammaMammaMiaMiaMammaMammaMiaMiaMamma.
+				</div>
+			</div>
+			<div class="concept" id="lesson-6-2">
+				<h4 class="concept-title">Inputs and Outputs</h4>
+				<div class="concept-description">
+					Functions take input, do something with it, and then produce output. The command <span class="code">def</span> defines the input and the command <span class="code">return</span> defines what to do with the input to create the output. Note that when defining the function, there can be any number of inputs within the parentheses. Furthermore, without the <span class="code">return</span>, no output is produced.
+				</div>
+			</div>
+			<div class="concept" id="lesson-6-3">
+				<h4 class="concept-title">Automatically Generating HTML</h4>
+				<div class="concept-description">
+					The following Python code will automatically generate HTML code for my webpage when I substitute my values for the parameters in the function:
+					<div class="codebox">def generate_concept_html(title,description):<br>
+						&nbsp;&nbsp;&nbsp;&nbsp;return '''&nbsp;&nbsp;&nbsp;&nbsp;&lt;div class="concept"><br>
+						&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&lt;h4 class="concept-title">''' + title + '''&lt;/h4><br>
+   						&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&lt;div class="concept-description"><br>
+   						&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;''' + description + '''<br>
+   						&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&lt;/div><br>
+   						&nbsp;&nbsp;&nbsp;&nbsp;&lt;/div>'''<br><br>
+   						print generate_html('Functions', '&nbsp;&nbsp;&nbsp;&nbsp;This is the description')
+					</div>
+					I can't wait to put this into action!
+				</div>
+			</div>
+		</div>
+		<div class="lesson">
+			<h3 id="lesson-7">Telling Computers What to Do</h3>
+			<div class="concept" id="lesson-7-1">
+				<h4 class="concept-title">Equality Comparisons</h4>
+				<div class="concept-description">
+					We can make code behave differently based on decisions. One way to do this is by making comparisons. In order to make comparisons, we use the mathematical symbols <span class="code">&lt;</span>, <span class="code">></span>, <span class="code">&lt;=</span>, <span class="code">>=</span>, <span class="code">!=</span>, and <span class="code">==</span>. For equal, we use a double <span class="code">==</span> instead of a single <span class="code">=</span> because as we learned before, a single <span class="code">=</span> means assignment where we assign a value to a variable. The result of these comparisons is either of the boolean values True or False.
+				</div>
+			</div>
+			<div class="concept" id="lesson-7-2">
+				<h4 class="concept-title">If Statements</h4>
+				<div class="concept-description">
+					We can use comparisons to make our code different based on the result of a comparison. We can define an output to occur based on whether or not the input meets certain criteria. We write this as <div class="codebox">if &lt;TestExpression>: <br>&nbsp;&nbsp;&nbsp;&nbsp;&lt;block></div> so that if the text expression evaluates to true, then the block is executed. If it evaluates to false, then the block is not executed and the next line of code is processed.
+				</div>
+			</div>
+			<div class="concept" id="lesson-7-3">
+				<h4 class="concept-title">Or</h4>
+				<div class="concept-description">
+					We can also use the <span class="code">or</span> construct to evaluate comparisons. A unique thing about using <span class="code">or</span> is that it only evaluates as much as it has to. This means that in the code <span class="code">&lt;Expression> or &lt;Expression></span>, if the first expression evaluates to True, then the value is True and the second expression is not evaluated. If the value of the first expression values to false, then the value of the construct is the value of the second expression.
+				</div>
+			</div>
+			<div class="concept" id="lesson-7-4">
+				<h4 class="concept-title">While Loops</h4>
+				<div class="concept-description">
+					If statements can only execute the code in the <span class="code">&lt;block></span> either 0 or 1 times depending on if the <span class="code">&lt;TestExpression></span> evaluates to true or not. While statements, on the other hand, continue to execute the code contained in the <span class="code">&lt;block></span> until the <span class="code">&lt;TestExpression></span> evaluates to false.  While loops are written like <div class="codebox">while &lt;TestExpression>: <br>&nbsp;&nbsp;&nbsp;&nbsp;&lt;block></div>
+				</div>
+			</div>
+			<div class="concept" id="lesson-7-5">
+				<h4 class="concept-title">Break Statements</h4>
+				<div class="concept-description">
+					Using the python command break in a while loop enables us to exit the while loop mid-process if certain conditions are met. Writing break into the code we know now is not a very good idea as it is extraneous and more complicated than necessary; however, this will come in handy later when extracting all the links in a page.
+				</div>
+			</div>
+		</div>
+		<div class="lesson">
+			<h3 id="lesson-8">Structured Data: Lists and For Loops</h3>
+			<div class="concept" id="lesson-8-1">
+				<h4 class="concept-title">Lists</h4>
+				<div class="concept-description">
+					A string is a kind of structured data that is a sequence of characters. We can break it down into its characters and operate on subsequences of strings. Strings are limited, however, because we can only put characters in strings. Lists, on the other hand, are much more powerful because we can put a sequence of anything into a list, including strings, numbers, and other lists. These elements are separated by commas. Just as with strings, we can use square brackets to access elements in lists. The major difference is that instead of returning a character, we will return an item or items in the list. The grammar for lists is a square bracket enclosing from zero to infinitely many elements separated by commas.
+				</div>
+			</div>
+			<div class="concept" id="lesson-8-2">
+				<h4 class="concept-title">Mutation</h4>
+				<div class="concept-description">
+					Another major difference between lists and strings is that lists are mutable. This means that we can change the value of a list after we've created it. With strings, you can use an assignment statement to create a variable. You can then use a new assignment statement to change the variable to reference a different string. This doesn't change the string, it simply creates a new string to be referenced by the variable. Additionally, you use another assignment statement to change the same variable to reference a previous iteration of itself and concatenate that with another string but that still only changes what the variable refers to and doesn't modify the initial string.<br><br>On the other hand, we can modify lists by modifying the value of their elements. For example, in the list <span class="code">p</span>, we can use <span class="code">p[0] = x</span> to change the value in the first position of list <span class="code">p</span> to whatever <span class="code">x</span> is, be it a string, number, or even another list.
+				</div>
+			</div>
+			<div class="concept" id="lesson-8-3">
+				<h4 class="concept-title">Aliasing</h4>
+				<div class="concept-description">
+					When we have two different ways to refer to the same object, that's referred to as aliasing. We can use an assignment statement to alias a list to correspond to multiple values. For example, for list <span class="code">p</span>, we can use the assignment statement <span class="code">q = p</span> so that q and p both refer to the same list. Therefore, when modifying either <span class="code">p</span> or <span class="code">q</span>, the list that both of these variables refer to will be altered.
+				</div>
+			</div>
+			<div class="concept" id="lesson-8-4">
+				<h4 class="concept-title">List Operations</h4>
+				<div class="concept-description">
+					<ol>
+						<li>Append adds a new element to the end of a list. Note that it only adds whatever is being appended to the newly created last position in a list, so that if another list is appended, it is nested within only one position of the list. This is different than the following operation, plus.</li>
+						<li>Plus (+) produces a new list that combines the elements of two lists into a new list. It works similarly to concatenation of strings by adding a second list to the end of a first list.</li>
+						<li>Len, short for length, shows how many elements are in a list, string, or any object that is a collection of things. It only counts outer elements, so that if one of the elements of a list is a nested list, it only returns one for the entire nested list.</li>
+					</ol>
+				</div>
+			</div>
+			<div class="concept" id="lesson-8-5">
+				<h4 class="concept-title">For Loops</h4>
+				<div class="concept-description">
+					Since lists are a collection of things, it's very useful to loop through a list and do something to every element in a list. We can use a new loop known as a for loop to remove the complication of using a while loop on structured data. The grammar for forming a for loop is <div class="codebox">for &lt;name> in &lt;list>:<br>&nbsp;&nbsp;&nbsp;&nbsp;&lt;block></div> where each element in the list is given the name <span class="code">&lt;name></span> and the block is evaluated for each element.
+				</div>
+			</div>
+		</div>
+	</div>
+</body>
+</html>
